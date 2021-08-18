@@ -9,7 +9,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 
 # login credentials
-credentials = yaml.load(open('./login.yml'))
+credentials = yaml.load(open('./login.yml'), Loader=yaml.FullLoader)
 usernameStr = credentials['user']['email']
 passwordStr = credentials['user']['password']
 url = credentials['user']['url']
