@@ -18,4 +18,6 @@ From here ➜ https://sites.google.com/a/chromium.org/chromedriver/downloads
 4. Run
 ``python3 main.py``
 
-I wrote this program to automatically log me into the D2L platform that uses Microsoft SSO on the backend and also open and join my Teams meeting for class :)
+>I wrote this program to automatically log me into the D2L platform that >uses Microsoft SSO on the backend and also open and join my Teams meeting >for class :)
+
+* D2L platform ➜ https://www.d2l.com
