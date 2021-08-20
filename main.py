@@ -25,7 +25,7 @@ usernameStr = credentials['user']['email']
 passwordStr = credentials['user']['password']
 url = credentials['user']['url']
 
-# incognito add following argument
+# Incognito mode add following argument
 # chrome_options = webdriver.ChromeOptions()
 # chrome_options.add_argument("--incognito")
 browser = webdriver.Chrome('./chromedriver')
@@ -33,13 +33,9 @@ browser.get(url)
 
 # Fill username and click
 WebDriverWait(browser, 10).until(EC.element_to_be_clickable(emailfield)).send_keys(usernameStr)
-# username = browser.find_element_by_id('i0116')
-# username.send_keys(usernameStr)
-# button = browser.find_element_by_id('idSIButton9')
-# browser.implicitly_wait(10)
 WebDriverWait(browser, 10).until(EC.element_to_be_clickable(nextbutton)).click()
 
-# Fill password and click
+# Fill password
 WebDriverWait(browser, 10).until(EC.element_to_be_clickable(passwordfield)).send_keys(passwordStr)
 
 # Sign in click
