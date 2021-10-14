@@ -1,6 +1,7 @@
 **/.DS_Store
 **/login.yml
 **/chromedriver
+**/.idea*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
